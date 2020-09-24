@@ -28,7 +28,10 @@
               <span style="font-size:20px">로그인</span>
             </v-btn>
             <div class="add-option">
-              <a href="#" @click="moveJoin">회원가입</a>
+              <nuxt-link to="/signup">
+                회원가입
+              </nuxt-link>
+
               <span class="bar" aria-hidden="true">|</span>
               <a href="#">아이디 찾기</a>
               <span class="bar" aria-hidden="true">|</span>

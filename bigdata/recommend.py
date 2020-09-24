@@ -153,10 +153,13 @@ def user_based_collaborative_filtering(users, user, n):
 kindergarten_df = load_from_data('./bigdata/data/data2.json')
 users_data = [[1+(j == i) if j == i or j==i+1 else 0 for j in range(len(kindergarten_df))] for i in range(10)]
 users_df = pd.DataFrame(users_data, columns=kindergarten_df.index)
+
+kindergarten_df = int(kindergarten_df)
+print(kindergarten_df)
 preference_df = get_preference(kindergarten_df,users_df.iloc[0,:])
 contents_recommend_df = recommend(kindergarten_df,preference_df,10)
 
-print(contents_recommend_df)
+# print(contents_recommend_df)
 print(user_based_collaborative_filtering(users_df, users_df.iloc[[0],:], 10))
 # parse_user_data(['11110','11111','11112'], pd.DataFrame(
 #         [
