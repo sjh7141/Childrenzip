@@ -4,7 +4,7 @@
 
 <br>
 
-### Translation: [US](#) [KR](../)
+### Translation: [US](#) [KR](https://github.com/sjh7141/Childrenzip)
 
 <br>
 
